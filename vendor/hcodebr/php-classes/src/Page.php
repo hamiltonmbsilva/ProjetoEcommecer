@@ -18,13 +18,13 @@ class Page{
         "data"=>[]
     ];
 
-    public function  _contruct($opts = array()){
+    public function  __construct($opts = array()){
 
         $this->options = array_merge($this->defaults, $opts);
 
         $config = array(
-            "tpl_dir"       => $_SERVER["DOCUMENT_ROOT"]."/Projeto E-Commecer Udemy/ecommece/views/",
-            "cache_dir"     => $_SERVER["DOCUMENT_ROOT"]."/Projeto E-Commecer Udemy/ecommece/views-cache/",
+            "tpl_dir"       => $_SERVER["DOCUMENT_ROOT"]."/views/",
+            "cache_dir"     => $_SERVER["DOCUMENT_ROOT"]."/views-cache/",
             "debug"         => false
         );
 
@@ -52,14 +52,14 @@ class Page{
     public function setTpl($name, $data = array(), $returnHTML = false){
 
         $this->setData($data);
-       $this->tpl = new Tpl();
+        $this->tpl = new Tpl();
 
         return  $this->tpl->draw($name,$returnHTML);
 
     }
 
-    public function  _destruct(){
-        $this->tpl = new Tpl;
+    public function __destruct(){
+//        $this->tpl = new Tpl;
 
         $this->tpl->draw("footer");
     }
