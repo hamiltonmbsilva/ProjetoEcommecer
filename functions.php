@@ -25,9 +25,6 @@ use \Hcode\Model\User;
 
         $user = User::getFromSession();
 
-        var_dump($user->getValues());
-        exit;
-
         return $user->getdesperson();
     }
 

@@ -50,9 +50,10 @@ class User extends Model{
             if($inadmin === true && (bool)$_SESSION[User::SESSION]['inadmin'] === true){
 
                 return true;
-            }elseif ($inadmin === false){
 
-                return false;
+            }else if ($inadmin === false){
+
+                return true;
 
             }else{
 
@@ -97,7 +98,7 @@ class User extends Model{
         }
     }
 
-    public static function verifyLogin( $inadmin = true){
+    public static function verifyLogin($inadmin = true){
 
         if (!User::checkLogin($inadmin)){
             if ($inadmin) {
@@ -108,6 +109,7 @@ class User extends Model{
             exit;
 
         }
+
     }
 
     public static function logout(){
@@ -138,8 +140,7 @@ class User extends Model{
 
         ));
 
-        $data = $results[0];
-        $this->setData($data);
+        $this->setData($results[0]);
     }
 
     public function get($iduser){
@@ -227,7 +228,9 @@ class User extends Model{
                     "name"=>$data['desperson'],
                     "link"=>$link
                 ));
+
                 $mailer->send();
+
                 return $link;
 
             }
