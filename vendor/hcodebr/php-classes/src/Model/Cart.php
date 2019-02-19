@@ -219,7 +219,6 @@ class Cart extends Model{
              $result = $xml->Servicos->cServico;
 
 
-
              if($result->MsgErro != ''){
 
                  Cart::setMsgError((string)$result->MsgError);
