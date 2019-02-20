@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa38f81-4268-4cac-8767-27a2b43a0b89" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/OrderStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/boleto_itau.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/imagens/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/imagens/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/imagens/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/imagens/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/imagens/b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/imagens/imgbrrazu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/imagens/imgbrrlrj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/imagens/imgpxlazu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/imagens/logoitau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/imagens/p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/include/funcoes_itau.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/boletophp/include/layout_itau.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/payment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views-cache/checkout.9baf62b3982f8f79a43b0346d55a8118.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/checkout.9baf62b3982f8f79a43b0346d55a8118.rtpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/OrderStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/OrderStatus.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1476">
-              <caret line="229" column="33" lean-forward="true" selection-start-line="228" selection-start-column="5" selection-end-line="229" selection-end-column="33" />
+            <state relative-caret-position="99">
+              <caret line="568" column="4" selection-start-line="568" selection-start-column="4" selection-end-line="568" selection-end-column="4" />
               <folding>
                 <element signature="e#101#117#0#PHP" expanded="true" />
               </folding>
@@ -43,7 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Address.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+              <folding>
+                <element signature="e#116#134#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Address.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Address.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-51">
@@ -53,6 +76,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="payment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/payment.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
@@ -67,8 +95,8 @@
       <file leaf-file-name="OrderStatus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/OrderStatus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="238">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#116#134#0#PHP" expanded="true" />
               </folding>
@@ -138,10 +166,10 @@
         <option value="$PROJECT_DIR$/views/header.html" />
         <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php" />
         <option value="$PROJECT_DIR$/views/checkout.html" />
+        <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Address.php" />
         <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Order.php" />
         <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/OrderStatus.php" />
         <option value="$PROJECT_DIR$/site.php" />
-        <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Address.php" />
       </list>
     </option>
   </component>
@@ -165,7 +193,7 @@
       <path value="$PROJECT_DIR$/vendor/hcodebr/php-classes" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -183,6 +211,17 @@
             <path>
               <item name="ecommece" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommece" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommece" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommece" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommece" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommece" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="boletophp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecommece" type="b2602c69:ProjectViewProjectNode" />
@@ -276,8 +315,9 @@
       <recent name="D:\PHP\Projeto E-Commecer Udemy\ecommece\vendor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PHP\Projeto E-Commecer Udemy\ecommece\vendor\hcodebr\php-classes\src\Model" />
+      <recent name="D:\PHP\Projeto E-Commecer Udemy\ecommece\res" />
       <recent name="D:\PHP\Projeto E-Commecer Udemy\ecommece\views" />
+      <recent name="D:\PHP\Projeto E-Commecer Udemy\ecommece\vendor\hcodebr\php-classes\src\Model" />
       <recent name="D:\PHP\Projeto E-Commecer Udemy\ecommece\views\admin" />
     </key>
   </component>
@@ -354,12 +394,12 @@
       <workItem from="1550491089266" duration="12735000" />
       <workItem from="1550536478201" duration="9703000" />
       <workItem from="1550583206626" duration="7773000" />
-      <workItem from="1550663505339" duration="9270000" />
+      <workItem from="1550663505339" duration="13590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217454000" />
+    <option name="totallyTimeSpent" value="221774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -399,13 +439,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Windows/System32/drivers/etc/hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ECommecer/Configurando-Autoload-de-Nossas-Classes/100 - Configurando Autoload de Nossas Classes/hcodebr/php-classes/src/DB/Sql.php" />
     <entry file="file://$PROJECT_DIR$/vendor/rain/raintpl/example-simple.php" />
     <entry file="file://$PROJECT_DIR$/hosts" />
@@ -676,40 +709,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="153" column="1" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
-          <folding>
-            <element signature="e#116#134#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="100" column="130" selection-start-line="100" selection-start-column="130" selection-end-line="100" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/OrderStatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#116#134#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1476">
-          <caret line="229" column="33" lean-forward="true" selection-start-line="228" selection-start-column="5" selection-end-line="229" selection-end-column="33" />
-          <folding>
-            <element signature="e#101#117#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,6 +722,39 @@
           <caret line="45" column="92" selection-start-line="45" selection-start-column="92" selection-end-line="45" selection-end-column="92" />
           <folding>
             <element signature="e#116#134#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/payment.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/OrderStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#116#134#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+          <folding>
+            <element signature="e#116#134#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="568" column="4" selection-start-line="568" selection-start-column="4" selection-end-line="568" selection-end-column="4" />
+          <folding>
+            <element signature="e#101#117#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
