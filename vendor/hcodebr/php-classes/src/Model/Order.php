@@ -15,6 +15,7 @@ use \Hcode\Model\Cart;
 class Order extends Model {
     const SUCCESS = "Order-Success";
     const ERROR = "Order-Error";
+
     public function save()
     {
         $sql = new Sql();
