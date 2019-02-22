@@ -17,6 +17,7 @@ use \Hcode\Model\User;
 use \Hcode\Model\Order;
 use \Hcode\Model\OrderStatus;
 
+
 $app->get('/', function() {
 
     $products = Product::listAll();
@@ -164,7 +165,7 @@ $app->get("/checkout", function (){
         $address->loadFromCEP($_GET['zipcode']);
         $cart->setdeszipcode($_GET['zipcode']);
         $cart->save();
-        $cart->getCalculateTotal();
+        $cart->getCalcculateTotal();
     }
     if (!$address->getdesaddress()) $address->setdesaddress('');
     if (!$address->getdesnumber()) $address->setdesnumber('');
@@ -234,7 +235,7 @@ $app->post("/checkout", function(){
 
     $cart = Cart::getFromSession();
 
-    $cart->getCalculateTotal();
+    $cart->getCalcculateTotal();
 
     $order = new Order();
 
@@ -253,10 +254,10 @@ $app->post("/checkout", function(){
 
     switch ((int)$_POST['payment-method']) {
         case 1:
-            header("Location: /order".$order->getidorder()."/pagseguro");
+            header("Location: /order/".$order->getidorder()."/pagseguro");
             break;
         case 2:
-            header("Location: /order".$order->getidorder()."/paypal");
+            header("Location: /order/".$order->getidorder()."/paypal");
             break;
     }
     exit;
@@ -276,7 +277,6 @@ $app->get("/order/:idorder/pagseguro", function($idorder){
         'header'=>false,
         'footer'=>false
     ]);
-
 
 
     $page->setTpl("payment-pagseguro", [
