@@ -5,9 +5,7 @@
  * Date: 05/02/2019
  * Time: 14:50
  */
-?>
 
-<?php
 use \Hcode\PageAdmin;
 use \Hcode\Model\User;
 

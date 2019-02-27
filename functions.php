@@ -5,9 +5,7 @@
  * Date: 09/02/2019
  * Time: 19:37
  */
-?>
 
-<?php
 
 use \Hcode\Model\User;
 use \Hcode\Model\Cart;

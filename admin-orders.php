@@ -6,9 +6,7 @@
  * Time: 16:21
  */
 
-?>
 
-<?php
 use \Hcode\PageAdmin;
 use \Hcode\Model\User;
 use \Hcode\Model\Order;

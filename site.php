@@ -5,8 +5,7 @@
  * Date: 05/02/2019
  * Time: 14:46
  */
-?>
-<?php
+
 
 use \Hcode\Page;
 use \Hcode\Model\Product;
