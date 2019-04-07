@@ -20,6 +20,19 @@ use \Hcode\Model\OrderStatus;
 $app->get('/', function() {
 
     $products = Product::listAll();
+    $category = Category::listAll();
+    $page = new Page();
+    $page->setTpl('index',[
+        'products'=>Product::checkList($products),
+        'category'=>Category::listAll($category)
+    ]);
+
+});
+
+$app->get('/products', function() {
+
+    $products = Product::listAll();
+
     $page = new Page();
     $page->setTpl('index',[
         'products'=>Product::checkList($products)

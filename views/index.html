@@ -77,13 +77,52 @@
     </div>
 </div> <!-- End promo area -->
 
+<!-- Inicio do conteudo central-->
+<div class="product-area">
+    <div class="container">
+            <div class="col-md-2">
+                <h1 class="my-4">Categorias</h1>
+                    {loop="$category"}
+                        <div class="list-group">
+                            <a href="/categories/{$value.idcategory}" class="list-group-item" alt="/{$value.idcategory}">{$value.descategory}</a>
+                        </div>
+                    {/loop}
+            </div>
+
+        <div class="col-md-10" id="central">
+            <h2 class="section-title">Produtos</h2>
+            <div class="row">
+                {loop="$products"}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single-product">
+                        <div class="product-f-image">
+                            <a href="#"><img src="{$value.desphoto}" alt="" width="250"></a>
+                            <div class="product-hover">
+                                <a href="/cart/{$value.idproduct}/add" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                <a href="/products/{$value.desurl}" class="view-details-link"><i class="fa fa-link"></i> Ver detalhe</a>
+
+                            </div>
+                        </div>
+                                <h2><a href="/products/{$value.desurl}">{$value.desproduct}</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>R${function="formatPrice($value.vlprice)"}</ins>
+                        </div>
+                    </div>
+                </div>
+                {/loop}
+            </div>
+        </div>
+    </div>
+</div><!-- fim do conteudo central do site -->
+
+<!-- inicicio da area do mais vendidos -->
 <div class="maincontent-area">
     <div class="zigzag-bottom"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="latest-product">
-                    <h2 class="section-title">Produtos</h2>
+                    <h2 class="section-title">Mais vendidos</h2>
                     <div class="product-carousel">
 
                     {loop="$products"}
